@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apex Marketing</title>
+
+<style>
+
+body {background-color: red;
+    text-align: center;
+    padding: 0px;
+}    
+
+h1{
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+h1{
+    color:blue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+#first{
+    width: 83px;
+    height: 43px;
+    text-align: center;
+    border-radius: 14px;
+    font-size: 20px;
+}
+
+#first:hover{
+    background-color: coral;
+}
+
+</style>
+
+<body>
+
+
+    <div style="color:green">
+        <form action="{{ url_for('predict')}}" method="post">
+
+            <h1 style = "text-align: center; background-color: powderblue;">REAL TIME STOCK PRICE FORECASTING</h1>
+
+            <h2 style = "text-align: center;">YOU WILL GET REAL TIME PREDICTION FOR ANY TICKER FOR THE NEXT MINUTES AND THE DATA WILL BE UPDATED LIVE AS WELL</h1>
+            <h3>Please Select the Ticker of Your Choice</h3><br><select name="Ticker" id="first" required="required">
+                <option value="^DJI;">DJIA</option>
+                <option value="ASFL">ASFL</option>
+            </select>
+            <br><br><button id="sub" type="submit ">Predictions</button>
+            <br>
+
+
+
+
+            </form>
+
+
+
+            <br><br><h3>{{ prediction_text }}<h3>
+        </div>
+    <img src="image.png" alt = "There is some backend error because of that image is not appearing" width = "104" height="142">
+</select>
+
+
+</body>
+
+</head>
+
+
+</html>
